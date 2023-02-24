@@ -1,8 +1,16 @@
-const Pokemon= () => {
+
+
+const Pokemon= ({selectedPokemon}) => {
+    
+  
+
+    // const getPokemonInfo=() => {
+    //   pokeApi(selectedPokemon)
+    // }
     return(
       <div>
-          <h2>Pokemon</h2>
-      
+          <h2>Name : {selectedPokemon.name} {selectedPokemon.weight}</h2>
+          
       </div>
     )
   };

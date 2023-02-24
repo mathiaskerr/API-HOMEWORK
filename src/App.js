@@ -1,10 +1,10 @@
 import './App.css';
-import PokeContianer from './containers/PokeContainer';
+import PokeContainer from './containers/PokeContainer';
 
 function App() {
   return (
     <div>
-      <PokeContianer/>
+      <PokeContainer/>
     </div>
   );
 }
