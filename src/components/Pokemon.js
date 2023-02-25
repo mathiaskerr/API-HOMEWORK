@@ -2,14 +2,24 @@
 
 const Pokemon= ({selectedPokemon}) => {
     
-  
-
-    // const getPokemonInfo=() => {
-    //   pokeApi(selectedPokemon)
-    // }
+  const abilities = selectedPokemon.abilities
+  const abilityNodes = abilities.map((ability,index) => {
+    console.log(ability.ability.name)
+    return <li key={index}>Ability : {ability.ability.name} </li>
+   
+});
+   
     return(
       <div>
-          <h2>Name : {selectedPokemon.name} {selectedPokemon.weight}</h2>
+          <h2>Name : {selectedPokemon.name} </h2>
+    
+          <ul>
+            <li>Weight : {selectedPokemon.weight}</li>
+            <li>Height : {selectedPokemon.height}</li>
+            
+              {abilityNodes}
+          
+          </ul>
           
       </div>
     )
