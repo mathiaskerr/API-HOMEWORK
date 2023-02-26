@@ -14,6 +14,7 @@ const Pokemon= ({selectedPokemon}) => {
           <h2>Name : {selectedPokemon.name} </h2>
     
           <ul>
+            <li><img src={selectedPokemon.sprites.other['official-artwork'].front_default}></img></li>
             <li>Weight : {selectedPokemon.weight}</li>
             <li>Height : {selectedPokemon.height}</li>
             
