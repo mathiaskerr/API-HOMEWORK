@@ -20,15 +20,16 @@ const Pokemon= ({selectedPokemon, addToPokeDeck}) => {
       <div>
           <h2>Name : {selectedPokemon.name} </h2>
     
-          <ul>
+          <ul className="pokemonDetails">
             <li><img src={selectedPokemon.sprites.other['official-artwork'].front_default}></img></li>
+            <li>Type: {selectedPokemon.types[0].type.name}</li>
             <li>Weight : {selectedPokemon.weight}</li>
             <li>Height : {selectedPokemon.height}</li>
             
               {abilityNodes}
           
           </ul>
-          <button onClick={handleClick}>Capture Pokemon!</button>
+          <button onClick={handleClick}>Capture/Release Pokemon!</button>
       </div>
     )
   };

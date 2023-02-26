@@ -26,6 +26,7 @@ ul li {
   padding: 10px;
   border-radius: 5px;
   background-color: green;
+
 }
 .water{
   margin: 20px;
@@ -44,6 +45,7 @@ ul li {
   width: 250px;
   padding: 10px;
   border-radius: 5px;
+  background-color: rgb(165, 93, 42);
 }
 .fire{
   margin: 20px;
@@ -62,4 +64,9 @@ ul li {
   padding: 10px;
   border-radius: 5px;
   background-color: greenyellow;
+}
+
+.pokemonDetails {
+  display: flex;
+  flex-direction: column;
 }

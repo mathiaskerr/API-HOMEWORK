@@ -4,8 +4,13 @@ const PokeDeck= ({favPokemon}) => {
      console.log(pokemon.types[0].type.name)
     return (
      <ul className={pokemon.types[0].type.name}> 
-     <li><h3>{pokemon.name}</h3></li>
+     <li><h1>{pokemon.name}</h1></li>
     <li key={pokemon.types[0].type.name}><img id='fav-img'src={pokemon.sprites.other['official-artwork'].front_default}></img></li>
+    <hr></hr>
+    <li id="type">Type : {pokemon.types[0].type.name}</li>
+    <li> HP: {pokemon.stats[0].base_stat}</li>
+    <li>Attack: {pokemon.stats[1].base_stat}</li>
+    <li>Defense:{pokemon.stats[2].base_stat}</li>
     </ul>
   )})
     return(
@@ -14,9 +19,10 @@ const PokeDeck= ({favPokemon}) => {
           
           <ul className="fav">
             {favouriteNodes}
-
-
+            
           </ul>
+
+     
       </div>
     )
   };

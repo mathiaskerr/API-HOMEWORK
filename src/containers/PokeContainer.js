@@ -32,7 +32,14 @@ const PokeContainer= () => {
       }
       else {favPokemon.includes(favPoke)
         const updatedFavPokemon = [...favPokemon]
-        setFavPoke(updatedFavPokemon)
+        const newFavPokemon = [];
+
+        for (let poke of updatedFavPokemon){
+          if(!poke === favPoke){
+            newFavPokemon.push(poke)
+          }
+        }
+        setFavPoke(newFavPokemon)
       }
       };
     
