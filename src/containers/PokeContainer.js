@@ -25,7 +25,10 @@ const PokeContainer= () => {
       .then(response => response.json())
       .then(pokemonData => setPokemon(pokemonData.results))
     } 
+
+
     const addToPokeDeck = (favPoke) => {
+  
       if (!favPokemon.includes(favPoke)){
         const updatedFavPokemon = [...favPokemon, favPoke];
         setFavPoke(updatedFavPokemon)
@@ -38,9 +41,11 @@ const PokeContainer= () => {
           if(!poke === favPoke){
             newFavPokemon.push(poke)
           }
+        
         }
         setFavPoke(newFavPokemon)
       }
+      
       };
     
 

@@ -4,9 +4,12 @@ const PokeDeck= ({favPokemon}) => {
      console.log(pokemon.types[0].type.name)
     return (
      <ul className={pokemon.types[0].type.name}> 
-     <li><h1>{pokemon.name}</h1></li>
+     <div className="pic-border">
+     
     <li key={pokemon.types[0].type.name}><img id='fav-img'src={pokemon.sprites.other['official-artwork'].front_default}></img></li>
-    <hr></hr>
+    </div>
+    
+    <li><h2>{pokemon.name}</h2></li>
     <li id="type">Type : {pokemon.types[0].type.name}</li>
     <li> HP: {pokemon.stats[0].base_stat}</li>
     <li>Attack: {pokemon.stats[1].base_stat}</li>

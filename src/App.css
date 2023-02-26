@@ -70,3 +70,29 @@ ul li {
   display: flex;
   flex-direction: column;
 }
+
+.pic-border{
+  border:1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grass > .pic-border{
+  background-color: rgb(1, 50, 1);
+}
+
+.water > .pic-border{
+  background-color:  rgb(3, 29, 82);
+}
+
+.fire > .pic-border{
+  background-color:  rgb(97, 29, 2);
+}
+
+.normal > .pic-border{
+  background-color: rgb(74, 32, 1);
+}
+
+.bug > .pic-border{
+  background-color: rgb(69, 113, 2);
+}
