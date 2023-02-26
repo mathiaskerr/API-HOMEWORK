@@ -21,7 +21,7 @@ ul li {
 .grass {
   margin: 20px;
   border:1px solid black;
-  height: 350px;
+  height: 325px;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -31,7 +31,7 @@ ul li {
 .water{
   margin: 20px;
   border:1px solid black;
-  height: 350px;
+  height: 325px;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -41,7 +41,7 @@ ul li {
 .normal{
   margin: 20px;
   border:1px solid black;
-  height: 350px;
+  height: 325px;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -50,7 +50,7 @@ ul li {
 .fire{
   margin: 20px;
   border:1px solid black;
-  height: 350px;
+  height: 325px;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -59,7 +59,7 @@ ul li {
 .bug{
   margin: 20px;
   border:1px solid black;
-  height: 350px;
+  height: 325px;
   width: 250px;
   padding: 10px;
   border-radius: 5px;

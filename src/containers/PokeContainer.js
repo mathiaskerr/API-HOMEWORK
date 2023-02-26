@@ -7,7 +7,7 @@ import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 const PokeContainer= () => {
     const[pokemon, setPokemon] = useState([]);
     const[selectedPokemon, setSelectedPokemon] = useState(null)
-    const[favPokemon, setFavPoke]=useState([]);
+    const[favPokemon, setFavPokemon]=useState([]);
 
     useEffect(() => {
       getPokemon()
@@ -28,10 +28,12 @@ const PokeContainer= () => {
 
 
     const addToPokeDeck = (favPoke) => {
-  
+
+
+    
       if (!favPokemon.includes(favPoke)){
         const updatedFavPokemon = [...favPokemon, favPoke];
-        setFavPoke(updatedFavPokemon)
+        setFavPokemon(updatedFavPokemon)
       }
       else {favPokemon.includes(favPoke)
         const updatedFavPokemon = [...favPokemon]
@@ -43,10 +45,10 @@ const PokeContainer= () => {
           }
         
         }
-        setFavPoke(newFavPokemon)
+        setFavPokemon(newFavPokemon)
       }
+    }
       
-      };
     
 
   return(

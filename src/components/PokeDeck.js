@@ -1,7 +1,7 @@
 const PokeDeck= ({favPokemon}) => {
 
   const favouriteNodes = favPokemon.map((pokemon,index) => {
-     console.log(pokemon.types[0].type.name)
+    //  console.log(pokemon.types[0].type.name)
     return (
      <ul className={pokemon.types[0].type.name}> 
      <div className="pic-border">
