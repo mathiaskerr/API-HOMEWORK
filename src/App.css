@@ -17,3 +17,49 @@ ul li {
   width: 50%;
   height: 50%;
 }
+
+.grass {
+  margin: 20px;
+  border:1px solid black;
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: green;
+}
+.water{
+  margin: 20px;
+  border:1px solid black;
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(59, 119, 237);
+}
+
+.normal{
+  margin: 20px;
+  border:1px solid black;
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.fire{
+  margin: 20px;
+  border:1px solid black;
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(232, 99, 46);
+}
+.bug{
+  margin: 20px;
+  border:1px solid black;
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: greenyellow;
+}
