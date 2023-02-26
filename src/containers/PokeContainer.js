@@ -7,7 +7,7 @@ import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 const PokeContainer= () => {
     const[pokemon, setPokemon] = useState([]);
     const[selectedPokemon, setSelectedPokemon] = useState(null)
-    const[pokeInfo, setPokeInfo]=useState([]);
+    const[favPokemon, setFavPoke]=useState([]);
 
     useEffect(() => {
       getPokemon()
@@ -20,25 +20,29 @@ const PokeContainer= () => {
       
     }
 
-    // const selectedPoke = pokemon.find (poke => poke.name === selectedPokemon)
-
-    // const pokeApi = (poke) => {
-    //   fetch(poke.url)
-    //   .then(response => response.json())
-    //   .then(pokemonData => setPokeInfo(pokemonData))
-    // }; 
-    
     const getPokemon = () => {
       fetch("https://pokeapi.co/api/v2/pokemon/")
       .then(response => response.json())
       .then(pokemonData => setPokemon(pokemonData.results))
     } 
+    const addToPokeDeck = (favPoke) => {
+      if (!favPokemon.includes(favPoke)){
+        const updatedFavPokemon = [...favPokemon, favPoke];
+        setFavPoke(updatedFavPokemon)
+      }
+      else {favPokemon.includes(favPoke)
+        const updatedFavPokemon = [...favPokemon]
+        setFavPoke(updatedFavPokemon)
+      }
+      };
+    
+
   return(
     <div>
         <h1>PokeStats</h1>
         <PokeSelect pokemon={pokemon} handlePokemonSelected={handlePokemonSelected}/>
-        {selectedPokemon? <Pokemon selectedPokemon={selectedPokemon} pokeInfo={pokeInfo}/>: null}
-        <PokeDeck/>
+        {selectedPokemon? <Pokemon selectedPokemon={selectedPokemon} addToPokeDeck={addToPokeDeck}/>: null}
+        <PokeDeck favPokemon={favPokemon}/>
 
     </div>
   )

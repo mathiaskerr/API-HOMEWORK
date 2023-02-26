@@ -1,11 +1,18 @@
 
 
-const Pokemon= ({selectedPokemon}) => {
+const Pokemon= ({selectedPokemon, addToPokeDeck}) => {
     
+
+  const handleClick = () => {
+    addToPokeDeck(selectedPokemon)
+  };
+
   const abilities = selectedPokemon.abilities
   const abilityNodes = abilities.map((ability,index) => {
-    console.log(ability.ability.name)
+
     return <li key={index}>Ability : {ability.ability.name} </li>
+   
+
    
 });
    
@@ -21,7 +28,7 @@ const Pokemon= ({selectedPokemon}) => {
               {abilityNodes}
           
           </ul>
-          
+          <button onClick={handleClick}>Capture Pokemon!</button>
       </div>
     )
   };

@@ -6,3 +6,14 @@ ul li {
   list-style: none;
   
 }
+
+.fav {
+  display:flex;
+  flex-wrap:wrap;
+
+}
+
+#fav-img{
+  width: 50%;
+  height: 50%;
+}
